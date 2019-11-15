@@ -13,7 +13,7 @@
 </head>
 <body>
 
-${userId }님 반갑습니다.
+	<a href="/conveniencestore/cu">cu</a>
 
 </body>
 </html>

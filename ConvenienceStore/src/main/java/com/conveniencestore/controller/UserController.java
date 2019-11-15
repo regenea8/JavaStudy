@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.conveniencestore.dto.TestVO;
 import com.conveniencestore.dto.UserDTO;
 import com.conveniencestore.service.UserService;
-import com.conveniencestore.util.InternetProtocolUtil;
 
 
 @Controller
@@ -72,7 +71,7 @@ public class UserController {
 	@RequestMapping(value = "/test", method = { RequestMethod.GET, RequestMethod.POST})
 	public String download(HttpServletRequest request, TestVO vo) throws Exception {
 
-		logger.info("-------------start download [Connect IP : " + InternetProtocolUtil.getClientIp(request) + "]");
+	
 
 		String result = "";
 		
@@ -82,7 +81,7 @@ public class UserController {
 			e.printStackTrace();
 		}
 		
-		logger.info("---------------end download [Connect IP : " + InternetProtocolUtil.getClientIp(request) + "]");
+		
 		
 		return result;
 	}

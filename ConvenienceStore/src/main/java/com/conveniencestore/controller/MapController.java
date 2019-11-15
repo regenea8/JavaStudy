@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.conveniencestore.dto.TestVO;
 import com.conveniencestore.dto.UserDTO;
 import com.conveniencestore.service.UserService;
-import com.conveniencestore.util.InternetProtocolUtil;
 
 
 @Controller
